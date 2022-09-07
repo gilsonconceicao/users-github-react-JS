@@ -1,0 +1,137 @@
+.container_about {
+    background-color: #222;
+    filter: drop-shadow(0 0 0.5em #0303fa57);
+   
+    color: #f4f1f1;
+    max-width: 700px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px auto;
+}
+
+.container_about h2 {
+    font-size: 2em;
+    line-height: 1em;
+    margin: 20px 0 5px 0;
+}
+
+.container_about img {
+    width: 40%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* about image bio */
+
+
+
+.info_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.bio {
+    max-width: 600px ;
+    margin-bottom: 10px;
+}
+
+.followers {
+    display: flex;
+}
+
+.followers p {
+    margin: 4px;
+}
+
+.repositories {
+    font-size: 20px;
+}
+
+.before_page {
+    display: block;
+    font-size: 2em;
+    color: #f4f1f1;
+    transition: .4s;
+}
+
+.before_page:hover {
+    filter: drop-shadow(0 0 4em #0303fa57);
+    transform: translateX(-0.4em);
+}
+
+/* Container repositories */
+
+.repositories {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title_and_input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .5s;
+}
+
+.title_and_input label {
+    text-align: left;
+    font-size: 12px;
+}
+
+.title_and_input input {
+    border: 1px solid #f4f1f17c;
+    color: #ede3e3;
+    padding: 10px;
+    border-radius: 5px;
+    width: 140px;
+    outline: none;
+    margin: 0 0 10px 0;
+    transition: .3s;
+}
+ 
+.about_info_repositories {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.info_repositories {
+    display: block;
+    background-color: #eaeaf114;
+    color: #f8f5f5;
+    text-align: left;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+.info_repositories span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_repositories a {
+    color: #6a6aeaca;
+}
+
+.update {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 780px) {
+    .container_about {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .title_and_input{
+        display: block;
+    }
+
+    .title_and_input label {
+        text-align: center;
+    }
+}

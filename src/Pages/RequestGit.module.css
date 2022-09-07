@@ -1,0 +1,99 @@
+.container_api {
+    max-width: 400px;
+    margin: 70px auto;
+}
+
+.container_api h2 {
+    font-size: 3em;
+    line-height: 40px;
+    text-align: center;
+}
+
+.form_application {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 ;
+}
+
+.form_application input {
+    background-color: #ffffff;
+    color: #000;
+    font-size: 18px;
+    outline: none;
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+}
+
+.form_application button {
+    background-color: #5752eb;
+    border: none;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 23px;
+    padding: 13px 10px;
+    transition: .5s;
+}
+
+.form_application button:hover {
+    width: 120px;
+}
+
+
+/* user result to search */
+
+.box_user_get {
+    background-color: #ffffff;
+    display: flex;
+    
+    align-items: center;
+    transition: .3s;
+}
+
+.box_user_get:hover {
+    max-width: 700px;
+}
+
+.box_user_get h3 {
+    font-size: 30px;
+}
+
+.box_user_get img {
+    transition: .3s;
+    display: block;
+    width: 20%;
+    margin-right: 20px;
+}
+
+a {
+    color: #383434;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 435px) {
+    .container_api{
+        margin: 70px 20px;
+    }
+
+    .container_api h2 {
+        font-size: 2em;
+    }
+
+    
+    .form_application input {
+        font-size: 17px;
+    }
+
+    .box_user_get h3 {
+        font-size: 20px;
+    }
+
+    .box_user_get img {
+        transition: .3s;
+        display: block;
+        width: 20%;
+        margin-right: 5px;
+    }
+    
+}
