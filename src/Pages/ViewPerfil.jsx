@@ -34,8 +34,6 @@ const ViewPerfil = () => {
         GetDataRepos()
     }, [])
 
-    console.log(user)
-
     const getSearchTheLanguage = search.length > 0 ?
         repositories.filter(repo => repo.name.includes(search)) : [];
 
@@ -62,8 +60,8 @@ const ViewPerfil = () => {
             </article>
             {/*<p>Repositórios: </p>*/}
             <div className={styles['followers']}>
-                <p><FiUsers /> {user.followers} Seguidores</p>
-                <p className='numberFollowers'>{user.following} Seguindo</p>
+                <p><FiUsers /> {user.followers} Followers</p>
+                <p className='numberFollowers'>{user.following} Following</p>
             </div>
 
             <div className={styles["repositories"]}>
@@ -83,7 +81,7 @@ const ViewPerfil = () => {
                                         <span>
                                             <h4>{repo.name}</h4>
                                             <span>
-                                                <a href={repo.url}>{<FiGithub />}</a>
+                                                <a href={repo.html_url} target='_blank'>{<FiGithub />}</a>
                                             </span>
                                         </span>
                                         <p className={styles['update']}>Update {new Date(repo.updated_at).toLocaleDateString('en-GB')}</p>
@@ -100,7 +98,7 @@ const ViewPerfil = () => {
                                         <span>
                                             <h4>{repo.name}</h4>
                                             <span>
-                                                <a href={repo.url}>{<FiGithub />}</a>
+                                                <a href={repo.html_url} target='_blank'>{<FiGithub />}</a>
                                             </span>
                                         </span>
                                         <p className={styles['update']}>Update {new Date(repo.updated_at).toLocaleDateString('en-GB')}</p>
