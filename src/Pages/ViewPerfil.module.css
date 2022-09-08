@@ -82,6 +82,7 @@
 }
 
 .title_and_input input {
+    background-color: #222;
     border: 1px solid #f4f1f17c;
     color: #ede3e3;
     padding: 10px;
